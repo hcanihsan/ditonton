@@ -46,7 +46,6 @@ class MockGetWatchlistMovies extends _i1.Mock
               _FakeEither_0<_i6.Failure, List<_i7.Movie>>())) as _i5
           .Future<_i2.Either<_i6.Failure, List<_i7.Movie>>>);
   @override
-  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
 
@@ -68,7 +67,6 @@ class MockGetWatchListStatus extends _i1.Mock
       (super.noSuchMethod(Invocation.method(#execute, [id]),
           returnValue: Future<bool>.value(false)) as _i5.Future<bool>);
   @override
-  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
 
@@ -92,7 +90,6 @@ class MockSaveWatchlist extends _i1.Mock implements _i9.SaveWatchlist {
                   _FakeEither_0<_i6.Failure, String>()))
           as _i5.Future<_i2.Either<_i6.Failure, String>>);
   @override
-  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
 
@@ -116,6 +113,5 @@ class MockRemoveWatchlist extends _i1.Mock implements _i11.RemoveWatchlist {
                   _FakeEither_0<_i6.Failure, String>()))
           as _i5.Future<_i2.Either<_i6.Failure, String>>);
   @override
-  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }

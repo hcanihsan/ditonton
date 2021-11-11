@@ -55,7 +55,6 @@ class MyApp extends StatelessWidget {
         BlocProvider(
           create: (_) => di.locator<SearchBlocMovie>(),
         ),
-
         BlocProvider(
           create: (_) => di.locator<NowPlayingMoviesBloc>(),
         ),
@@ -68,9 +67,6 @@ class MyApp extends StatelessWidget {
         BlocProvider(
           create: (_) => di.locator<WatchlistMoviesBloc>(),
         ),
-        // ChangeNotifierProvider(
-        //   create: (_) => di.locator<TVSeriesListNotifier>(),
-        // ),
         BlocProvider(
           create: (_) => di.locator<NowPlayingTVSeriesBloc>(),
         ),
@@ -150,7 +146,7 @@ class MyApp extends StatelessWidget {
               return MaterialPageRoute(builder: (_) {
                 return Scaffold(
                   body: Center(
-                    child: Text('Page Not Found :('),
+                    child: Text('Page not found :('),
                   ),
                 );
               });

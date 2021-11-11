@@ -45,6 +45,5 @@ class MockGetPopularMovies extends _i1.Mock implements _i4.GetPopularMovies {
               _FakeEither_1<_i6.Failure, List<_i7.Movie>>())) as _i5
           .Future<_i3.Either<_i6.Failure, List<_i7.Movie>>>);
   @override
-  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
