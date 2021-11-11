@@ -61,7 +61,7 @@ void main() {
     });
   });
 
-  group('get TV series detail', () {
+  group('get TV Series detail', () {
     // ignore: prefer_const_declarations
     final tId = 134983;
 
