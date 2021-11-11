@@ -1,0 +1,130 @@
+{
+  "backdrop_path": "/lYDH4HAm8p5K9NaDYhaZO4T7y7K.jpg",
+  "created_by": [],
+  "episode_run_time": [
+      46
+  ],
+  "first_air_date": "2021-09-26",
+  "genres": [
+      {
+          "id": 18,
+          "name": "Drama"
+      }
+  ],
+  "homepage": "",
+  "id": 134983,
+  "in_production": true,
+  "languages": [
+      "zh"
+  ],
+  "last_air_date": "2021-10-20",
+  "last_episode_to_air": {
+      "air_date": "2021-10-20",
+      "episode_number": 47,
+      "id": 3242229,
+      "name": "",
+      "overview": "",
+      "production_code": "",
+      "season_number": 1,
+      "still_path": null,
+      "vote_average": 0,
+      "vote_count": 0
+  },
+  "name": "Medal of the Republic",
+  "next_episode_to_air": {
+      "air_date": "2021-10-21",
+      "episode_number": 48,
+      "id": 3242230,
+      "name": "",
+      "overview": "",
+      "production_code": "",
+      "season_number": 1,
+      "still_path": null,
+      "vote_average": 0,
+      "vote_count": 0
+  },
+  "networks": [
+      {
+          "name": "Beijing Television",
+          "id": 455,
+          "logo_path": "/5LU9zEP1SredmscM25lv7Z1xW3y.png",
+          "origin_country": "CN"
+      },
+      {
+          "name": "Zhejiang Television",
+          "id": 989,
+          "logo_path": "/jXR61DUeQu4jdryz85cjnCFXNNv.png",
+          "origin_country": "CN"
+      },
+      {
+          "name": "Jiangsu Television",
+          "id": 1055,
+          "logo_path": "/kqk4HRRuQmjo74z864wAUsq7AWT.png",
+          "origin_country": "CN"
+      },
+      {
+          "name": "Dragon TV",
+          "id": 1056,
+          "logo_path": "/neufSFU0ZrXxA3c0JRNpuNXzLdx.png",
+          "origin_country": "CN"
+      },
+      {
+          "name": "iQiyi",
+          "id": 1330,
+          "logo_path": "/t2HmORL2WgZdUUWyK2QOVIU6lwv.png",
+          "origin_country": "CN"
+      },
+      {
+          "name": "Youku",
+          "id": 1419,
+          "logo_path": "/jGumA5iP8eXdQ22EOFY6kWrBzza.png",
+          "origin_country": "CN"
+      },
+      {
+          "name": "Tencent Video",
+          "id": 2007,
+          "logo_path": "/uBCIoV9AUGIdfXTrtJ6CRIxOZF6.png",
+          "origin_country": "CN"
+      }
+  ],
+  "number_of_episodes": 48,
+  "number_of_seasons": 1,
+  "origin_country": [
+      "CN"
+  ],
+  "original_language": "zh",
+  "original_name": "功勋",
+  "overview": "",
+  "popularity": 1431.914,
+  "poster_path": "/8ryjORff8eYT27T6gRFxaHzhGsU.jpg",
+  "production_companies": [],
+  "production_countries": [
+      {
+          "iso_3166_1": "CN",
+          "name": "China"
+      }
+  ],
+  "seasons": [
+      {
+          "air_date": "2021-09-26",
+          "episode_count": 48,
+          "id": 213087,
+          "name": "Season 1",
+          "overview": "",
+          "poster_path": "/8ryjORff8eYT27T6gRFxaHzhGsU.jpg",
+          "season_number": 1
+      }
+  ],
+  "spoken_languages": [
+      {
+          "english_name": "Mandarin",
+          "iso_639_1": "zh",
+          "name": "普通话"
+      }
+  ],
+  "status": "Returning Series",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 5.2,
+  "vote_count": 5
+}
