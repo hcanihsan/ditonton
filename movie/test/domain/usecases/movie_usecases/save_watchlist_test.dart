@@ -1,17 +1,17 @@
 import 'package:dartz/dartz.dart';
-import 'package:core/domain/usecases/save_watchlist.dart';
+import 'package:movie/domain/usecases/movie_usecases/save_watchlist_movies.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
-import '../../dummy_data/dummy_objects.dart';
-import '../../helpers/test_helper.mocks.dart';
+import '../../../dummy_data/dummy_objects.dart';
+import '../../../helpers/test_helper.mocks.dart';
 
 void main() {
-  late SaveWatchlist usecase;
+  late SaveWatchlistMovies usecase;
   late MockMovieRepository mockMovieRepository;
 
   setUp(() {
     mockMovieRepository = MockMovieRepository();
-    usecase = SaveWatchlist(mockMovieRepository);
+    usecase = SaveWatchlistMovies(mockMovieRepository);
   });
 
   test('should save movie to the repository', () async {

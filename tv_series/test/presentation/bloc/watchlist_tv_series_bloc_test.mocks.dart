@@ -4,9 +4,12 @@
 
 import 'dart:async' as _i5;
 
-import 'package:core/domain/usecases/get_watchlist_status.dart' as _i8;
-import 'package:core/domain/usecases/remove_watchlist.dart' as _i11;
-import 'package:core/domain/usecases/save_watchlist.dart' as _i9;
+import 'package:tv_series/domain/usecases/tv_series_usecases/get_watchlist_status_tv_series.dart'
+    as _i8;
+import 'package:tv_series/domain/usecases/tv_series_usecases/remove_watchlist_tv_series.dart'
+    as _i11;
+import 'package:tv_series/domain/usecases/tv_series_usecases/save_watchlist_tv_series.dart'
+    as _i9;
 import 'package:core/utils/failure.dart' as _i6;
 import 'package:dartz/dartz.dart' as _i2;
 import 'package:mockito/mockito.dart' as _i1;

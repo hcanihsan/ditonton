@@ -117,6 +117,7 @@ class MockMovieRepository extends _i1.Mock implements _i5.MovieRepository {
               _FakeEither_0<_i7.Failure, List<_i8.Movie>>())) as _i6
           .Future<_i2.Either<_i7.Failure, List<_i8.Movie>>>);
   @override
+  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
 
@@ -164,6 +165,7 @@ class MockMovieRemoteDataSource extends _i1.Mock
                   Future<List<_i11.MovieModel>>.value(<_i11.MovieModel>[]))
           as _i6.Future<List<_i11.MovieModel>>);
   @override
+  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
 
@@ -195,6 +197,7 @@ class MockMovieLocalDataSource extends _i1.Mock
           returnValue: Future<List<_i13.MovieTable>>.value(<_i13.MovieTable>[]))
       as _i6.Future<List<_i13.MovieTable>>);
   @override
+  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
 
@@ -252,6 +255,7 @@ class MockDatabaseHelper extends _i1.Mock implements _i14.DatabaseHelper {
                   <Map<String, dynamic>>[]))
           as _i6.Future<List<Map<String, dynamic>>>);
   @override
+  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
 
@@ -334,5 +338,6 @@ class MockHttpClient extends _i1.Mock implements _i4.Client {
   void close() => super.noSuchMethod(Invocation.method(#close, []),
       returnValueForMissingStub: null);
   @override
+  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }

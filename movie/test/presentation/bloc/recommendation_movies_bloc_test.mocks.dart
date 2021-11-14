@@ -46,5 +46,6 @@ class MockGetMovieRecommendations extends _i1.Mock
               _FakeEither_1<_i6.Failure, List<_i7.Movie>>())) as _i5
           .Future<_i3.Either<_i6.Failure, List<_i7.Movie>>>);
   @override
+  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }

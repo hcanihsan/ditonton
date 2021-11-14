@@ -6,7 +6,6 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:tv_series/domain/usecases/tv_series_usecases/get_tv_series_detail.dart';
 import 'package:tv_series/presentation/bloc/tv_series_detail_bloc.dart';
-
 import '../../dummy_data/dummy_objects.dart';
 import 'tv_series_detail_bloc_test.mocks.dart';
 

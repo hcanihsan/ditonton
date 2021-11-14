@@ -1,4 +1,4 @@
-import 'package:core/domain/usecases/get_watchlist_status.dart';
+import 'package:tv_series/domain/usecases/tv_series_usecases/get_watchlist_status_tv_series.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 

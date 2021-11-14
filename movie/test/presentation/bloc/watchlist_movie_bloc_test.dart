@@ -1,7 +1,7 @@
 import 'package:bloc_test/bloc_test.dart';
-import 'package:core/domain/usecases/get_watchlist_status.dart';
-import 'package:core/domain/usecases/remove_watchlist.dart';
-import 'package:core/domain/usecases/save_watchlist.dart';
+import 'package:movie/domain/usecases/movie_usecases/get_watchlist_status_movies.dart';
+import 'package:movie/domain/usecases/movie_usecases/remove_watchlist_movies.dart';
+import 'package:movie/domain/usecases/movie_usecases/save_watchlist_movies.dart';
 import 'package:dartz/dartz.dart';
 import 'package:core/utils/failure.dart';
 import 'package:movie/domain/usecases/movie_usecases/get_watchlist_movies.dart';
@@ -14,8 +14,12 @@ import '../../dummy_data/dummy_objects.dart';
 import 'watchlist_movie_bloc.dart';
 import 'watchlist_movie_bloc_test.mocks.dart';
 
-@GenerateMocks(
-    [GetWatchlistMovies, GetWatchListStatus, SaveWatchlist, RemoveWatchlist])
+@GenerateMocks([
+  GetWatchlistMovies,
+  GetWatchListStatusMovies,
+  SaveWatchlistMovies,
+  RemoveWatchlistMovies
+])
 void main() {
   late WatchlistMoviesBloc watchlistMoviesBloc;
 

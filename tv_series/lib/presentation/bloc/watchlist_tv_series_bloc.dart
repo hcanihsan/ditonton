@@ -1,6 +1,6 @@
-import 'package:core/domain/usecases/get_watchlist_status.dart';
-import 'package:core/domain/usecases/remove_watchlist.dart';
-import 'package:core/domain/usecases/save_watchlist.dart';
+import 'package:tv_series/domain/usecases/tv_series_usecases/get_watchlist_status_tv_series.dart';
+import 'package:tv_series/domain/usecases/tv_series_usecases/remove_watchlist_tv_series.dart';
+import 'package:tv_series/domain/usecases/tv_series_usecases/save_watchlist_tv_series.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:tv_series/domain/entities/tv_series_entities/tv_series.dart';

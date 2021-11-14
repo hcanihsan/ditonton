@@ -5,8 +5,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:movie/domain/usecases/movie_usecases/get_movie_detail.dart';
+import 'package:movie/presentation/bloc/movie_detail_bloc.dart';
 import '../../dummy_data/dummy_objects.dart';
-import 'movie_detail_bloc.dart';
 import 'movie_detail_bloc_test.mocks.dart';
 
 @GenerateMocks([GetMovieDetail])

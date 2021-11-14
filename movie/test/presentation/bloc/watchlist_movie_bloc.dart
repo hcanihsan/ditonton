@@ -1,6 +1,6 @@
-import 'package:core/domain/usecases/get_watchlist_status.dart';
-import 'package:core/domain/usecases/remove_watchlist.dart';
-import 'package:core/domain/usecases/save_watchlist.dart';
+import 'package:movie/domain/usecases/movie_usecases/get_watchlist_status_movies.dart';
+import 'package:movie/domain/usecases/movie_usecases/remove_watchlist_movies.dart';
+import 'package:movie/domain/usecases/movie_usecases/save_watchlist_movies.dart';
 import 'package:movie/domain/entities/movie_entities/movie.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -14,9 +14,9 @@ class WatchlistMoviesBloc
   // ignore: unused_field
 
   final GetWatchlistMovies _getWatchlistMovies;
-  final GetWatchListStatus _getWatchListStatus;
-  final SaveWatchlist _saveWatchlist;
-  final RemoveWatchlist _removeWatchlist;
+  final GetWatchListStatusMovies _getWatchListStatus;
+  final SaveWatchlistMovies _saveWatchlist;
+  final RemoveWatchlistMovies _removeWatchlist;
 
   WatchlistMoviesBloc(this._getWatchlistMovies, this._getWatchListStatus,
       this._saveWatchlist, this._removeWatchlist)

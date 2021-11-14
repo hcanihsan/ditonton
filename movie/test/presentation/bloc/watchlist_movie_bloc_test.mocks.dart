@@ -4,9 +4,12 @@
 
 import 'dart:async' as _i5;
 
-import 'package:core/domain/usecases/get_watchlist_status.dart' as _i8;
-import 'package:core/domain/usecases/remove_watchlist.dart' as _i11;
-import 'package:core/domain/usecases/save_watchlist.dart' as _i9;
+import 'package:movie/domain/usecases/movie_usecases/get_watchlist_status_movies.dart'
+    as _i8;
+import 'package:movie/domain/usecases/movie_usecases/remove_watchlist_movies.dart'
+    as _i11;
+import 'package:movie/domain/usecases/movie_usecases/save_watchlist_movies.dart'
+    as _i9;
 import 'package:core/utils/failure.dart' as _i6;
 import 'package:dartz/dartz.dart' as _i2;
 import 'package:mockito/mockito.dart' as _i1;
@@ -46,6 +49,7 @@ class MockGetWatchlistMovies extends _i1.Mock
               _FakeEither_0<_i6.Failure, List<_i7.Movie>>())) as _i5
           .Future<_i2.Either<_i6.Failure, List<_i7.Movie>>>);
   @override
+  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
 
@@ -53,7 +57,7 @@ class MockGetWatchlistMovies extends _i1.Mock
 ///
 /// See the documentation for Mockito's code generation for more information.
 class MockGetWatchListStatus extends _i1.Mock
-    implements _i8.GetWatchListStatus {
+    implements _i8.GetWatchListStatusMovies {
   MockGetWatchListStatus() {
     _i1.throwOnMissingStub(this);
   }
@@ -67,13 +71,14 @@ class MockGetWatchListStatus extends _i1.Mock
       (super.noSuchMethod(Invocation.method(#execute, [id]),
           returnValue: Future<bool>.value(false)) as _i5.Future<bool>);
   @override
+  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
 
 /// A class which mocks [SaveWatchlist].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockSaveWatchlist extends _i1.Mock implements _i9.SaveWatchlist {
+class MockSaveWatchlist extends _i1.Mock implements _i9.SaveWatchlistMovies {
   MockSaveWatchlist() {
     _i1.throwOnMissingStub(this);
   }
@@ -90,13 +95,15 @@ class MockSaveWatchlist extends _i1.Mock implements _i9.SaveWatchlist {
                   _FakeEither_0<_i6.Failure, String>()))
           as _i5.Future<_i2.Either<_i6.Failure, String>>);
   @override
+  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
 
 /// A class which mocks [RemoveWatchlist].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockRemoveWatchlist extends _i1.Mock implements _i11.RemoveWatchlist {
+class MockRemoveWatchlist extends _i1.Mock
+    implements _i11.RemoveWatchlistMovies {
   MockRemoveWatchlist() {
     _i1.throwOnMissingStub(this);
   }
@@ -113,5 +120,6 @@ class MockRemoveWatchlist extends _i1.Mock implements _i11.RemoveWatchlist {
                   _FakeEither_0<_i6.Failure, String>()))
           as _i5.Future<_i2.Either<_i6.Failure, String>>);
   @override
+  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
