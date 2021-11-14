@@ -20,7 +20,6 @@ import 'watchlist_tv_series_bloc_test.mocks.dart';
 ])
 void main() {
   late WatchlistTVSeriesBloc watchlistTVSeriesBloc;
-
   late MockGetWatchlistTVSeries mockGetWatchlistTVSeries;
   late MockGetWatchListStatusTVSeries mockGetWatchlistStatusTVSeries;
   late MockSaveWatchlistTVSeries mockSaveWatchlistTVSeries;

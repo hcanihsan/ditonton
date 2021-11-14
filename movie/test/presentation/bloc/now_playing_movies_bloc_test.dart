@@ -6,8 +6,7 @@ import 'package:movie/domain/usecases/movie_usecases/get_now_playing_movies.dart
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-
-import 'now_playing_movies_bloc.dart';
+import 'package:movie/presentation/bloc/now_playing_movies_bloc.dart';
 import 'now_playing_movies_bloc_test.mocks.dart';
 
 @GenerateMocks([GetNowPlayingMovies])

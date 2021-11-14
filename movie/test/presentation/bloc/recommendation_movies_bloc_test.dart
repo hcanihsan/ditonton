@@ -6,8 +6,7 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:movie/domain/entities/movie_entities/movie.dart';
 import 'package:movie/domain/usecases/movie_usecases/get_movie_recommendations.dart';
-
-import 'recommendation_movies_bloc.dart';
+import 'package:movie/presentation/bloc/recommendation_movies_bloc.dart';
 import 'recommendation_movies_bloc_test.mocks.dart';
 
 @GenerateMocks([GetMovieRecommendations])
