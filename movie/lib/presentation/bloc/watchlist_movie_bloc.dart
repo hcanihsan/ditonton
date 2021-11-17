@@ -11,8 +11,6 @@ part 'state/watchlist_movie_state.dart';
 
 class WatchlistMoviesBloc
     extends Bloc<WatchlistMoviesEvent, WatchlistMoviesState> {
-  // ignore: unused_field
-
   final GetWatchlistMovies _getWatchlistMovies;
   final GetWatchListStatusMovies _getWatchListStatus;
   final SaveWatchlistMovies _saveWatchlist;

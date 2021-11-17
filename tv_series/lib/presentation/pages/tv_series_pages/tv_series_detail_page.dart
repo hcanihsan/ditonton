@@ -52,27 +52,36 @@ class _TVSeriesDetailPageState extends State<TVSeriesDetailPage> {
             : (value.state is WatchlistStatusTVSeriesChanged)
                 ? false
                 : true);
-    return Scaffold(
-      body: SizedBox(
-        child: detailTVSeriesState is DetailTVSeriesLoading
-            ? const Center(
-                child: CircularProgressIndicator(),
-              )
-            : (detailTVSeriesState is DetailTVSeriesHasData)
-                ? TVSeriesDetailContent(
-                    detailTVSeriesState.result,
-                    recommendationTVSeriesState is RecommendationTVSeriesHasData
-                        ? recommendationTVSeriesState.result
-                        : List.empty(),
-                    isAddToWatchListTVSeries,
-                  )
-                : detailTVSeriesState is DetailTVSeriesError
-                    ? Center(
-                        child: Text(detailTVSeriesState.message),
-                      )
-                    : const Center(
-                        child: Text('Data Not Found'),
-                      ),
+    return WillPopScope(
+      onWillPop: () async {
+        context
+            .read<WatchlistTVSeriesBloc>()
+            .add(WatchlistTVSeriesHasDataEvent());
+        return true;
+      },
+      child: Scaffold(
+        body: SizedBox(
+          child: detailTVSeriesState is DetailTVSeriesLoading
+              ? const Center(
+                  child: CircularProgressIndicator(),
+                )
+              : (detailTVSeriesState is DetailTVSeriesHasData)
+                  ? TVSeriesDetailContent(
+                      detailTVSeriesState.result,
+                      recommendationTVSeriesState
+                              is RecommendationTVSeriesHasData
+                          ? recommendationTVSeriesState.result
+                          : List.empty(),
+                      isAddToWatchListTVSeries,
+                    )
+                  : detailTVSeriesState is DetailTVSeriesError
+                      ? Center(
+                          child: Text(detailTVSeriesState.message),
+                        )
+                      : const Center(
+                          child: Text('Data Not Found'),
+                        ),
+        ),
       ),
     );
   }
@@ -308,6 +317,9 @@ class _TVSeriesDetailContentState extends State<TVSeriesDetailContent> {
             child: IconButton(
               icon: const Icon(Icons.arrow_back),
               onPressed: () {
+                context
+                    .read<WatchlistTVSeriesBloc>()
+                    .add(WatchlistTVSeriesHasDataEvent());
                 Navigator.pop(context);
               },
             ),

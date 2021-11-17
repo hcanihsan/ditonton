@@ -46,6 +46,10 @@ class _WatchlistMoviesPageState extends State<WatchlistMoviesPage> {
             return Text(state.message);
           } else if (state is WatchlistMoviesEmpty) {
             return const Text('Data Not Found');
+          } else if (state is WatchlistStatusMoviesChanged) {
+            return const Text('');
+          } else if (state is RemoveWatchlistMoviesHasData) {
+            return const Text('');
           } else {
             return const Text('');
           }

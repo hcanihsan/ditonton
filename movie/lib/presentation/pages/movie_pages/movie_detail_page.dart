@@ -45,34 +45,39 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
         context.watch<DetailMoviesBloc>().state;
     RecommendationMoviesState recommendationMoviesState =
         context.watch<RecommendationMoviesBloc>().state;
-
     bool isAddToWatchListMovies = context.select<WatchlistMoviesBloc, bool>(
         (value) => (value.state is WatchlistStatusMoviesChanged)
             ? (value.state as WatchlistStatusMoviesChanged).status
             : (value.state is WatchlistStatusMoviesChanged)
                 ? false
                 : true);
-    return Scaffold(
-      body: SizedBox(
-        child: detailMoviesState is DetailMoviesLoading
-            ? const Center(
-                child: CircularProgressIndicator(),
-              )
-            : (detailMoviesState is DetailMoviesHasData)
-                ? DetailContent(
-                    detailMoviesState.result,
-                    recommendationMoviesState is RecommendationMoviesHasData
-                        ? recommendationMoviesState.result
-                        : List.empty(),
-                    isAddToWatchListMovies,
-                  )
-                : detailMoviesState is DetailMoviesError
-                    ? Center(
-                        child: Text(detailMoviesState.message),
-                      )
-                    : const Center(
-                        child: Text('Data Not Found'),
-                      ),
+    return WillPopScope(
+      onWillPop: () async {
+        context.read<WatchlistMoviesBloc>().add(WatchlistMoviesHasDataEvent());
+        return true;
+      },
+      child: Scaffold(
+        body: SizedBox(
+          child: detailMoviesState is DetailMoviesLoading
+              ? const Center(
+                  child: CircularProgressIndicator(),
+                )
+              : (detailMoviesState is DetailMoviesHasData)
+                  ? DetailContent(
+                      detailMoviesState.result,
+                      recommendationMoviesState is RecommendationMoviesHasData
+                          ? recommendationMoviesState.result
+                          : List.empty(),
+                      isAddToWatchListMovies,
+                    )
+                  : detailMoviesState is DetailMoviesError
+                      ? Center(
+                          child: Text(detailMoviesState.message),
+                        )
+                      : const Center(
+                          child: Text('Data Not Found'),
+                        ),
+        ),
       ),
     );
   }
@@ -305,6 +310,9 @@ class _DetailContentState extends State<DetailContent> {
             child: IconButton(
               icon: const Icon(Icons.arrow_back),
               onPressed: () {
+                context
+                    .read<WatchlistMoviesBloc>()
+                    .add(WatchlistMoviesHasDataEvent());
                 Navigator.pop(context);
               },
             ),
